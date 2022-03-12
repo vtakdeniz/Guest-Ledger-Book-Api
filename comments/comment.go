@@ -1,4 +1,4 @@
-package model
+package comments
 
 import (
 	"github.com/jinzhu/gorm"
@@ -10,8 +10,8 @@ type Comment struct {
 	Content string `json:"content"`
 }
 
-type MockComment struct {
-	Id      int    `json:Id`
+type CommentDto struct {
+	ID      int    `json:"ID"`
 	Email   string `json:"email"`
 	Content string `json:"content"`
 }
