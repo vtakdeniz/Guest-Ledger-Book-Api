@@ -1,0 +1,346 @@
+# Logfile created on 2022-03-13 14:33:25 +0300 by logger.rb/47272
+I, [2022-03-13T14:33:30.874221 #11991]  INFO -- : Running example 'Verifying a pact between foo and bar Given Ping Object Pong Object with POST /ping returns a response which has status code 200'
+I, [2022-03-13T14:33:30.879873 #11991]  INFO -- : Sending POST request to path: "/ping" with headers: {"CONTENT_TYPE"=>"application/json", "HTTP_X_PACT_ORIGINAL_HEADER_NAMES"=>"Content-Type", "X_PACT_PROVIDER_STATES"=>[{"name"=>"Ping Object"}]}, see debug logs for body
+D, [2022-03-13T14:33:30.879945 #11991] DEBUG -- : body :{"times":5}
+I, [2022-03-13T14:33:30.895308 #11991]  INFO -- : Received response with status: 404, headers: {"Access-Control-Allow-Origin"=>"*", "Content-Length"=>"17", "Content-Type"=>"text/plain; charset=utf-8", "Date"=>"Sun, 13 Mar 2022 11:33:30 GMT", "Vary"=>"Origin"}, see debug logs for body
+D, [2022-03-13T14:33:30.895379 #11991] DEBUG -- : body: Cannot POST /ping
+I, [2022-03-13T14:33:34.100841 #11991]  INFO -- : Running example 'Verifying a pact between ShoppingCartClient and ShoppingCartApi Given i have a list of comments a request for comments with GET /comments returns a response which has status code 200'
+I, [2022-03-13T14:33:34.102443 #11991]  INFO -- : Sending GET request to path: "/comments" with headers: {"HTTP_ACCEPT"=>"application/json", "HTTP_X_PACT_ORIGINAL_HEADER_NAMES"=>"Accept", "X_PACT_PROVIDER_STATES"=>[{"name"=>"i have a list of comments"}]}, see debug logs for body
+D, [2022-03-13T14:33:34.102492 #11991] DEBUG -- : body :
+I, [2022-03-13T14:33:34.104688 #11991]  INFO -- : Received response with status: 200, headers: {"Access-Control-Allow-Origin"=>"*", "Content-Length"=>"4", "Content-Type"=>"application/json", "Date"=>"Sun, 13 Mar 2022 11:33:33 GMT", "Vary"=>"Origin"}, see debug logs for body
+D, [2022-03-13T14:33:34.104789 #11991] DEBUG -- : body: null
+I, [2022-03-13T14:33:34.106181 #11991]  INFO -- : Running example 'Verifying a pact between ShoppingCartClient and ShoppingCartApi Given i will delete comments a request for deleting comments with DELETE /comments returns a response which has status code 200'
+I, [2022-03-13T14:33:34.107420 #11991]  INFO -- : Sending DELETE request to path: "/comments" with headers: {"X_PACT_PROVIDER_STATES"=>[{"name"=>"i will delete comments"}]}, see debug logs for body
+D, [2022-03-13T14:33:34.107464 #11991] DEBUG -- : body :
+I, [2022-03-13T14:33:34.109293 #11991]  INFO -- : Received response with status: 200, headers: {"Access-Control-Allow-Origin"=>"*", "Content-Length"=>"0", "Date"=>"Sun, 13 Mar 2022 11:33:33 GMT", "Vary"=>"Origin"}, see debug logs for body
+D, [2022-03-13T14:33:34.109337 #11991] DEBUG -- : body: 
+I, [2022-03-13T14:33:34.110073 #11991]  INFO -- : Running example 'Verifying a pact between ShoppingCartClient and ShoppingCartApi Given i have a list of comments post request for a comment with POST /comments returns a response which has status code 200'
+I, [2022-03-13T14:33:34.111178 #11991]  INFO -- : Sending POST request to path: "/comments" with headers: {"CONTENT_TYPE"=>"application/json", "HTTP_X_PACT_ORIGINAL_HEADER_NAMES"=>"Content-Type", "X_PACT_PROVIDER_STATES"=>[{"name"=>"i have a list of comments"}]}, see debug logs for body
+D, [2022-03-13T14:33:34.111263 #11991] DEBUG -- : body :{"email":"test@example.com","comment":"test"}
+I, [2022-03-13T14:33:34.114914 #11991]  INFO -- : Received response with status: 200, headers: {"Access-Control-Allow-Origin"=>"*", "Content-Length"=>"0", "Date"=>"Sun, 13 Mar 2022 11:33:33 GMT", "Vary"=>"Origin"}, see debug logs for body
+D, [2022-03-13T14:33:34.114975 #11991] DEBUG -- : body: 
+I, [2022-03-13T14:33:34.115533 #11991]  INFO -- : Running example 'Verifying a pact between ShoppingCartClient and ShoppingCartApi Given i will post a comment post request for a comment with POST /comments returns a response which has status code 200'
+I, [2022-03-13T14:33:34.116989 #11991]  INFO -- : Sending POST request to path: "/comments" with headers: {"CONTENT_TYPE"=>"application/json", "HTTP_X_PACT_ORIGINAL_HEADER_NAMES"=>"Content-Type", "X_PACT_PROVIDER_STATES"=>[{"name"=>"i will post a comment"}]}, see debug logs for body
+D, [2022-03-13T14:33:34.117065 #11991] DEBUG -- : body :{"email":"test@example.com","comment":"test"}
+I, [2022-03-13T14:33:34.119760 #11991]  INFO -- : Received response with status: 200, headers: {"Access-Control-Allow-Origin"=>"*", "Content-Length"=>"0", "Date"=>"Sun, 13 Mar 2022 11:33:33 GMT", "Vary"=>"Origin"}, see debug logs for body
+D, [2022-03-13T14:33:34.119797 #11991] DEBUG -- : body: 
+I, [2022-03-13T14:41:30.138280 #26224]  INFO -- : Running example 'Verifying a pact between ShoppingCartClient and ShoppingCartApi Given i have a list of comments a request for comments with GET /comments returns a response which has status code 200'
+I, [2022-03-13T14:41:30.143240 #26224]  INFO -- : Sending GET request to path: "/comments" with headers: {"HTTP_ACCEPT"=>"application/json", "HTTP_X_PACT_ORIGINAL_HEADER_NAMES"=>"Accept", "X_PACT_PROVIDER_STATES"=>[{"name"=>"i have a list of comments"}]}, see debug logs for body
+D, [2022-03-13T14:41:30.143297 #26224] DEBUG -- : body :
+I, [2022-03-13T14:41:30.156314 #26224]  INFO -- : Received response with status: 200, headers: {"Access-Control-Allow-Origin"=>"*", "Content-Length"=>"105", "Content-Type"=>"application/json", "Date"=>"Sun, 13 Mar 2022 11:41:29 GMT", "Vary"=>"Origin"}, see debug logs for body
+D, [2022-03-13T14:41:30.156416 #26224] DEBUG -- : body: [{"ID":1,"email":"test@gmail.com","content":"test"},{"ID":2,"email":"test2@gmail.com","content":"test2"}]
+I, [2022-03-13T14:41:30.160164 #26224]  INFO -- : Running example 'Verifying a pact between ShoppingCartClient and ShoppingCartApi Given i will delete comments a request for deleting comments with DELETE /comments returns a response which has status code 200'
+I, [2022-03-13T14:41:30.161570 #26224]  INFO -- : Sending DELETE request to path: "/comments" with headers: {"X_PACT_PROVIDER_STATES"=>[{"name"=>"i will delete comments"}]}, see debug logs for body
+D, [2022-03-13T14:41:30.161609 #26224] DEBUG -- : body :
+I, [2022-03-13T14:41:30.164334 #26224]  INFO -- : Received response with status: 200, headers: {"Access-Control-Allow-Origin"=>"*", "Content-Length"=>"0", "Date"=>"Sun, 13 Mar 2022 11:41:29 GMT", "Vary"=>"Origin"}, see debug logs for body
+D, [2022-03-13T14:41:30.164371 #26224] DEBUG -- : body: 
+I, [2022-03-13T14:41:30.165239 #26224]  INFO -- : Running example 'Verifying a pact between ShoppingCartClient and ShoppingCartApi Given i have a list of comments post request for a comment with POST /comments returns a response which has status code 200'
+I, [2022-03-13T14:41:30.166448 #26224]  INFO -- : Sending POST request to path: "/comments" with headers: {"CONTENT_TYPE"=>"application/json", "HTTP_X_PACT_ORIGINAL_HEADER_NAMES"=>"Content-Type", "X_PACT_PROVIDER_STATES"=>[{"name"=>"i have a list of comments"}]}, see debug logs for body
+D, [2022-03-13T14:41:30.166500 #26224] DEBUG -- : body :{"email":"test@example.com","comment":"test"}
+I, [2022-03-13T14:41:30.168941 #26224]  INFO -- : Received response with status: 200, headers: {"Access-Control-Allow-Origin"=>"*", "Content-Length"=>"0", "Date"=>"Sun, 13 Mar 2022 11:41:29 GMT", "Vary"=>"Origin"}, see debug logs for body
+D, [2022-03-13T14:41:30.168978 #26224] DEBUG -- : body: 
+I, [2022-03-13T14:41:30.169418 #26224]  INFO -- : Running example 'Verifying a pact between ShoppingCartClient and ShoppingCartApi Given i will post a comment post request for a comment with POST /comments returns a response which has status code 200'
+I, [2022-03-13T14:41:30.170387 #26224]  INFO -- : Sending POST request to path: "/comments" with headers: {"CONTENT_TYPE"=>"application/json", "HTTP_X_PACT_ORIGINAL_HEADER_NAMES"=>"Content-Type", "X_PACT_PROVIDER_STATES"=>[{"name"=>"i will post a comment"}]}, see debug logs for body
+D, [2022-03-13T14:41:30.170433 #26224] DEBUG -- : body :{"email":"test@example.com","comment":"test"}
+I, [2022-03-13T14:41:30.172767 #26224]  INFO -- : Received response with status: 200, headers: {"Access-Control-Allow-Origin"=>"*", "Content-Length"=>"0", "Date"=>"Sun, 13 Mar 2022 11:41:29 GMT", "Vary"=>"Origin"}, see debug logs for body
+D, [2022-03-13T14:41:30.172832 #26224] DEBUG -- : body: 
+I, [2022-03-13T14:41:33.871626 #26224]  INFO -- : Running example 'Verifying a pact between ShoppingCartClient and ShoppingCartApi Given i have a list of comments a request for comments with GET /comments returns a response which has status code 200'
+I, [2022-03-13T14:41:33.873217 #26224]  INFO -- : Sending GET request to path: "/comments" with headers: {"HTTP_ACCEPT"=>"application/json", "HTTP_X_PACT_ORIGINAL_HEADER_NAMES"=>"Accept", "X_PACT_PROVIDER_STATES"=>[{"name"=>"i have a list of comments"}]}, see debug logs for body
+D, [2022-03-13T14:41:33.873260 #26224] DEBUG -- : body :
+I, [2022-03-13T14:41:33.875598 #26224]  INFO -- : Received response with status: 200, headers: {"Access-Control-Allow-Origin"=>"*", "Content-Length"=>"99", "Content-Type"=>"application/json", "Date"=>"Sun, 13 Mar 2022 11:41:33 GMT", "Vary"=>"Origin"}, see debug logs for body
+D, [2022-03-13T14:41:33.875691 #26224] DEBUG -- : body: [{"ID":3,"email":"test@example.com","content":""},{"ID":4,"email":"test@example.com","content":""}]
+I, [2022-03-13T14:41:33.877284 #26224]  INFO -- : Running example 'Verifying a pact between ShoppingCartClient and ShoppingCartApi Given i will delete comments a request for deleting comments with DELETE /comments returns a response which has status code 200'
+I, [2022-03-13T14:41:33.878618 #26224]  INFO -- : Sending DELETE request to path: "/comments" with headers: {"X_PACT_PROVIDER_STATES"=>[{"name"=>"i will delete comments"}]}, see debug logs for body
+D, [2022-03-13T14:41:33.878660 #26224] DEBUG -- : body :
+I, [2022-03-13T14:41:33.881436 #26224]  INFO -- : Received response with status: 200, headers: {"Access-Control-Allow-Origin"=>"*", "Content-Length"=>"0", "Date"=>"Sun, 13 Mar 2022 11:41:33 GMT", "Vary"=>"Origin"}, see debug logs for body
+D, [2022-03-13T14:41:33.881477 #26224] DEBUG -- : body: 
+I, [2022-03-13T14:41:33.882265 #26224]  INFO -- : Running example 'Verifying a pact between ShoppingCartClient and ShoppingCartApi Given i have a list of comments post request for a comment with POST /comments returns a response which has status code 200'
+I, [2022-03-13T14:41:33.883431 #26224]  INFO -- : Sending POST request to path: "/comments" with headers: {"CONTENT_TYPE"=>"application/json", "HTTP_X_PACT_ORIGINAL_HEADER_NAMES"=>"Content-Type", "X_PACT_PROVIDER_STATES"=>[{"name"=>"i have a list of comments"}]}, see debug logs for body
+D, [2022-03-13T14:41:33.883479 #26224] DEBUG -- : body :{"email":"test@example.com","comment":"test"}
+I, [2022-03-13T14:41:33.887097 #26224]  INFO -- : Received response with status: 200, headers: {"Access-Control-Allow-Origin"=>"*", "Content-Length"=>"0", "Date"=>"Sun, 13 Mar 2022 11:41:33 GMT", "Vary"=>"Origin"}, see debug logs for body
+D, [2022-03-13T14:41:33.887143 #26224] DEBUG -- : body: 
+I, [2022-03-13T14:41:33.887638 #26224]  INFO -- : Running example 'Verifying a pact between ShoppingCartClient and ShoppingCartApi Given i will post a comment post request for a comment with POST /comments returns a response which has status code 200'
+I, [2022-03-13T14:41:33.888981 #26224]  INFO -- : Sending POST request to path: "/comments" with headers: {"CONTENT_TYPE"=>"application/json", "HTTP_X_PACT_ORIGINAL_HEADER_NAMES"=>"Content-Type", "X_PACT_PROVIDER_STATES"=>[{"name"=>"i will post a comment"}]}, see debug logs for body
+D, [2022-03-13T14:41:33.889032 #26224] DEBUG -- : body :{"email":"test@example.com","comment":"test"}
+I, [2022-03-13T14:41:33.891533 #26224]  INFO -- : Received response with status: 200, headers: {"Access-Control-Allow-Origin"=>"*", "Content-Length"=>"0", "Date"=>"Sun, 13 Mar 2022 11:41:33 GMT", "Vary"=>"Origin"}, see debug logs for body
+D, [2022-03-13T14:41:33.891571 #26224] DEBUG -- : body: 
+I, [2022-03-13T14:45:27.286071 #26618]  INFO -- : Running example 'Verifying a pact between ShoppingCartClient and ShoppingCartApi Given i have a list of comments a request for comments with GET /comments returns a response which has status code 200'
+I, [2022-03-13T14:45:27.290814 #26618]  INFO -- : Sending GET request to path: "/comments" with headers: {"HTTP_ACCEPT"=>"application/json", "HTTP_X_PACT_ORIGINAL_HEADER_NAMES"=>"Accept", "X_PACT_PROVIDER_STATES"=>[{"name"=>"i have a list of comments"}]}, see debug logs for body
+D, [2022-03-13T14:45:27.290878 #26618] DEBUG -- : body :
+I, [2022-03-13T14:45:27.303345 #26618]  INFO -- : Received response with status: 200, headers: {"Access-Control-Allow-Origin"=>"*", "Content-Length"=>"105", "Content-Type"=>"application/json", "Date"=>"Sun, 13 Mar 2022 11:45:26 GMT", "Vary"=>"Origin"}, see debug logs for body
+D, [2022-03-13T14:45:27.303393 #26618] DEBUG -- : body: [{"ID":1,"email":"test@gmail.com","content":"test"},{"ID":2,"email":"test2@gmail.com","content":"test2"}]
+I, [2022-03-13T14:45:27.304870 #26618]  INFO -- : Running example 'Verifying a pact between ShoppingCartClient and ShoppingCartApi Given i will delete comments a request for deleting comments with DELETE /comments returns a response which has status code 200'
+I, [2022-03-13T14:45:27.306193 #26618]  INFO -- : Sending DELETE request to path: "/comments" with headers: {"X_PACT_PROVIDER_STATES"=>[{"name"=>"i will delete comments"}]}, see debug logs for body
+D, [2022-03-13T14:45:27.306227 #26618] DEBUG -- : body :
+I, [2022-03-13T14:45:27.308952 #26618]  INFO -- : Received response with status: 200, headers: {"Access-Control-Allow-Origin"=>"*", "Content-Length"=>"0", "Date"=>"Sun, 13 Mar 2022 11:45:26 GMT", "Vary"=>"Origin"}, see debug logs for body
+D, [2022-03-13T14:45:27.308990 #26618] DEBUG -- : body: 
+I, [2022-03-13T14:45:27.311274 #26618]  INFO -- : Running example 'Verifying a pact between ShoppingCartClient and ShoppingCartApi Given i have a list of comments post request for a comment with POST /comments returns a response which has status code 200'
+I, [2022-03-13T14:45:27.312394 #26618]  INFO -- : Sending POST request to path: "/comments" with headers: {"CONTENT_TYPE"=>"application/json", "HTTP_X_PACT_ORIGINAL_HEADER_NAMES"=>"Content-Type", "X_PACT_PROVIDER_STATES"=>[{"name"=>"i have a list of comments"}]}, see debug logs for body
+D, [2022-03-13T14:45:27.312438 #26618] DEBUG -- : body :{"email":"test@example.com","comment":"test"}
+I, [2022-03-13T14:45:27.314708 #26618]  INFO -- : Received response with status: 200, headers: {"Access-Control-Allow-Origin"=>"*", "Content-Length"=>"0", "Date"=>"Sun, 13 Mar 2022 11:45:26 GMT", "Vary"=>"Origin"}, see debug logs for body
+D, [2022-03-13T14:45:27.314741 #26618] DEBUG -- : body: 
+I, [2022-03-13T14:45:27.315140 #26618]  INFO -- : Running example 'Verifying a pact between ShoppingCartClient and ShoppingCartApi Given i will post a comment post request for a comment with POST /comments returns a response which has status code 200'
+I, [2022-03-13T14:45:27.316154 #26618]  INFO -- : Sending POST request to path: "/comments" with headers: {"CONTENT_TYPE"=>"application/json", "HTTP_X_PACT_ORIGINAL_HEADER_NAMES"=>"Content-Type", "X_PACT_PROVIDER_STATES"=>[{"name"=>"i will post a comment"}]}, see debug logs for body
+D, [2022-03-13T14:45:27.316197 #26618] DEBUG -- : body :{"email":"test@example.com","content":"test"}
+I, [2022-03-13T14:45:27.318333 #26618]  INFO -- : Received response with status: 200, headers: {"Access-Control-Allow-Origin"=>"*", "Content-Length"=>"0", "Date"=>"Sun, 13 Mar 2022 11:45:26 GMT", "Vary"=>"Origin"}, see debug logs for body
+D, [2022-03-13T14:45:27.318367 #26618] DEBUG -- : body: 
+I, [2022-03-13T14:45:30.675782 #26618]  INFO -- : Running example 'Verifying a pact between ShoppingCartClient and ShoppingCartApi Given i have a list of comments a request for comments with GET /comments returns a response which has status code 200'
+I, [2022-03-13T14:45:30.677296 #26618]  INFO -- : Sending GET request to path: "/comments" with headers: {"HTTP_ACCEPT"=>"application/json", "HTTP_X_PACT_ORIGINAL_HEADER_NAMES"=>"Accept", "X_PACT_PROVIDER_STATES"=>[{"name"=>"i have a list of comments"}]}, see debug logs for body
+D, [2022-03-13T14:45:30.677339 #26618] DEBUG -- : body :
+I, [2022-03-13T14:45:30.679789 #26618]  INFO -- : Received response with status: 200, headers: {"Access-Control-Allow-Origin"=>"*", "Content-Length"=>"103", "Content-Type"=>"application/json", "Date"=>"Sun, 13 Mar 2022 11:45:29 GMT", "Vary"=>"Origin"}, see debug logs for body
+D, [2022-03-13T14:45:30.679847 #26618] DEBUG -- : body: [{"ID":3,"email":"test@example.com","content":""},{"ID":4,"email":"test@example.com","content":"test"}]
+I, [2022-03-13T14:45:30.681330 #26618]  INFO -- : Running example 'Verifying a pact between ShoppingCartClient and ShoppingCartApi Given i will delete comments a request for deleting comments with DELETE /comments returns a response which has status code 200'
+I, [2022-03-13T14:45:30.682560 #26618]  INFO -- : Sending DELETE request to path: "/comments" with headers: {"X_PACT_PROVIDER_STATES"=>[{"name"=>"i will delete comments"}]}, see debug logs for body
+D, [2022-03-13T14:45:30.682599 #26618] DEBUG -- : body :
+I, [2022-03-13T14:45:30.685287 #26618]  INFO -- : Received response with status: 200, headers: {"Access-Control-Allow-Origin"=>"*", "Content-Length"=>"0", "Date"=>"Sun, 13 Mar 2022 11:45:29 GMT", "Vary"=>"Origin"}, see debug logs for body
+D, [2022-03-13T14:45:30.685324 #26618] DEBUG -- : body: 
+I, [2022-03-13T14:45:30.686115 #26618]  INFO -- : Running example 'Verifying a pact between ShoppingCartClient and ShoppingCartApi Given i have a list of comments post request for a comment with POST /comments returns a response which has status code 200'
+I, [2022-03-13T14:45:30.687292 #26618]  INFO -- : Sending POST request to path: "/comments" with headers: {"CONTENT_TYPE"=>"application/json", "HTTP_X_PACT_ORIGINAL_HEADER_NAMES"=>"Content-Type", "X_PACT_PROVIDER_STATES"=>[{"name"=>"i have a list of comments"}]}, see debug logs for body
+D, [2022-03-13T14:45:30.687342 #26618] DEBUG -- : body :{"email":"test@example.com","comment":"test"}
+I, [2022-03-13T14:45:30.689958 #26618]  INFO -- : Received response with status: 200, headers: {"Access-Control-Allow-Origin"=>"*", "Content-Length"=>"0", "Date"=>"Sun, 13 Mar 2022 11:45:29 GMT", "Vary"=>"Origin"}, see debug logs for body
+D, [2022-03-13T14:45:30.689998 #26618] DEBUG -- : body: 
+I, [2022-03-13T14:45:30.690457 #26618]  INFO -- : Running example 'Verifying a pact between ShoppingCartClient and ShoppingCartApi Given i will post a comment post request for a comment with POST /comments returns a response which has status code 200'
+I, [2022-03-13T14:45:30.691623 #26618]  INFO -- : Sending POST request to path: "/comments" with headers: {"CONTENT_TYPE"=>"application/json", "HTTP_X_PACT_ORIGINAL_HEADER_NAMES"=>"Content-Type", "X_PACT_PROVIDER_STATES"=>[{"name"=>"i will post a comment"}]}, see debug logs for body
+D, [2022-03-13T14:45:30.691672 #26618] DEBUG -- : body :{"email":"test@example.com","comment":"test"}
+I, [2022-03-13T14:45:30.694494 #26618]  INFO -- : Received response with status: 200, headers: {"Access-Control-Allow-Origin"=>"*", "Content-Length"=>"0", "Date"=>"Sun, 13 Mar 2022 11:45:29 GMT", "Vary"=>"Origin"}, see debug logs for body
+D, [2022-03-13T14:45:30.694538 #26618] DEBUG -- : body: 
+I, [2022-03-13T14:47:25.430590 #26809]  INFO -- : Running example 'Verifying a pact between ShoppingCartClient and ShoppingCartApi Given i have a list of comments a request for comments with GET /comments returns a response which has status code 200'
+I, [2022-03-13T14:47:25.435009 #26809]  INFO -- : Sending GET request to path: "/comments" with headers: {"HTTP_ACCEPT"=>"application/json", "HTTP_X_PACT_ORIGINAL_HEADER_NAMES"=>"Accept", "X_PACT_PROVIDER_STATES"=>[{"name"=>"i have a list of comments"}]}, see debug logs for body
+D, [2022-03-13T14:47:25.435056 #26809] DEBUG -- : body :
+I, [2022-03-13T14:47:25.446810 #26809]  INFO -- : Received response with status: 200, headers: {"Access-Control-Allow-Origin"=>"*", "Content-Length"=>"105", "Content-Type"=>"application/json", "Date"=>"Sun, 13 Mar 2022 11:47:25 GMT", "Vary"=>"Origin"}, see debug logs for body
+D, [2022-03-13T14:47:25.446866 #26809] DEBUG -- : body: [{"ID":1,"email":"test@gmail.com","content":"test"},{"ID":2,"email":"test2@gmail.com","content":"test2"}]
+I, [2022-03-13T14:47:25.448285 #26809]  INFO -- : Running example 'Verifying a pact between ShoppingCartClient and ShoppingCartApi Given i will delete comments a request for deleting comments with DELETE /comments returns a response which has status code 200'
+I, [2022-03-13T14:47:25.449592 #26809]  INFO -- : Sending DELETE request to path: "/comments" with headers: {"X_PACT_PROVIDER_STATES"=>[{"name"=>"i will delete comments"}]}, see debug logs for body
+D, [2022-03-13T14:47:25.449657 #26809] DEBUG -- : body :
+I, [2022-03-13T14:47:25.452330 #26809]  INFO -- : Received response with status: 200, headers: {"Access-Control-Allow-Origin"=>"*", "Content-Length"=>"0", "Date"=>"Sun, 13 Mar 2022 11:47:25 GMT", "Vary"=>"Origin"}, see debug logs for body
+D, [2022-03-13T14:47:25.452364 #26809] DEBUG -- : body: 
+I, [2022-03-13T14:47:25.454505 #26809]  INFO -- : Running example 'Verifying a pact between ShoppingCartClient and ShoppingCartApi Given i have a list of comments post request for a comment with POST /comments returns a response which has status code 200'
+I, [2022-03-13T14:47:25.455699 #26809]  INFO -- : Sending POST request to path: "/comments" with headers: {"CONTENT_TYPE"=>"application/json", "HTTP_X_PACT_ORIGINAL_HEADER_NAMES"=>"Content-Type", "X_PACT_PROVIDER_STATES"=>[{"name"=>"i have a list of comments"}]}, see debug logs for body
+D, [2022-03-13T14:47:25.455746 #26809] DEBUG -- : body :{"email":"test@example.com","comment":"test"}
+I, [2022-03-13T14:47:25.458149 #26809]  INFO -- : Received response with status: 200, headers: {"Access-Control-Allow-Origin"=>"*", "Content-Length"=>"0", "Date"=>"Sun, 13 Mar 2022 11:47:25 GMT", "Vary"=>"Origin"}, see debug logs for body
+D, [2022-03-13T14:47:25.458182 #26809] DEBUG -- : body: 
+I, [2022-03-13T14:47:25.458602 #26809]  INFO -- : Running example 'Verifying a pact between ShoppingCartClient and ShoppingCartApi Given i will post a comment post request for a comment with POST /comments returns a response which has status code 200'
+I, [2022-03-13T14:47:25.459634 #26809]  INFO -- : Sending POST request to path: "/comments" with headers: {"CONTENT_TYPE"=>"application/json", "HTTP_X_PACT_ORIGINAL_HEADER_NAMES"=>"Content-Type", "X_PACT_PROVIDER_STATES"=>[{"name"=>"i will post a comment"}]}, see debug logs for body
+D, [2022-03-13T14:47:25.459678 #26809] DEBUG -- : body :{"email":"test@example.com","content":"test"}
+I, [2022-03-13T14:47:25.461990 #26809]  INFO -- : Received response with status: 200, headers: {"Access-Control-Allow-Origin"=>"*", "Content-Length"=>"0", "Date"=>"Sun, 13 Mar 2022 11:47:25 GMT", "Vary"=>"Origin"}, see debug logs for body
+D, [2022-03-13T14:47:25.462027 #26809] DEBUG -- : body: 
+I, [2022-03-13T14:47:28.999339 #26809]  INFO -- : Running example 'Verifying a pact between ShoppingCartClient and ShoppingCartApi Given i have a list of comments a request for comments with GET /comments returns a response which has status code 200'
+I, [2022-03-13T14:47:29.000885 #26809]  INFO -- : Sending GET request to path: "/comments" with headers: {"HTTP_ACCEPT"=>"application/json", "HTTP_X_PACT_ORIGINAL_HEADER_NAMES"=>"Accept", "X_PACT_PROVIDER_STATES"=>[{"name"=>"i have a list of comments"}]}, see debug logs for body
+D, [2022-03-13T14:47:29.000928 #26809] DEBUG -- : body :
+I, [2022-03-13T14:47:29.003293 #26809]  INFO -- : Received response with status: 200, headers: {"Access-Control-Allow-Origin"=>"*", "Content-Length"=>"103", "Content-Type"=>"application/json", "Date"=>"Sun, 13 Mar 2022 11:47:28 GMT", "Vary"=>"Origin"}, see debug logs for body
+D, [2022-03-13T14:47:29.003338 #26809] DEBUG -- : body: [{"ID":3,"email":"test@example.com","content":""},{"ID":4,"email":"test@example.com","content":"test"}]
+I, [2022-03-13T14:47:29.004844 #26809]  INFO -- : Running example 'Verifying a pact between ShoppingCartClient and ShoppingCartApi Given i will delete comments a request for deleting comments with DELETE /comments returns a response which has status code 200'
+I, [2022-03-13T14:47:29.006170 #26809]  INFO -- : Sending DELETE request to path: "/comments" with headers: {"X_PACT_PROVIDER_STATES"=>[{"name"=>"i will delete comments"}]}, see debug logs for body
+D, [2022-03-13T14:47:29.006230 #26809] DEBUG -- : body :
+I, [2022-03-13T14:47:29.009166 #26809]  INFO -- : Received response with status: 200, headers: {"Access-Control-Allow-Origin"=>"*", "Content-Length"=>"0", "Date"=>"Sun, 13 Mar 2022 11:47:28 GMT", "Vary"=>"Origin"}, see debug logs for body
+D, [2022-03-13T14:47:29.009206 #26809] DEBUG -- : body: 
+I, [2022-03-13T14:47:29.009972 #26809]  INFO -- : Running example 'Verifying a pact between ShoppingCartClient and ShoppingCartApi Given i have a list of comments post request for a comment with POST /comments returns a response which has status code 200'
+I, [2022-03-13T14:47:29.011204 #26809]  INFO -- : Sending POST request to path: "/comments" with headers: {"CONTENT_TYPE"=>"application/json", "HTTP_X_PACT_ORIGINAL_HEADER_NAMES"=>"Content-Type", "X_PACT_PROVIDER_STATES"=>[{"name"=>"i have a list of comments"}]}, see debug logs for body
+D, [2022-03-13T14:47:29.011282 #26809] DEBUG -- : body :{"email":"test@example.com","comment":"test"}
+I, [2022-03-13T14:47:29.013808 #26809]  INFO -- : Received response with status: 200, headers: {"Access-Control-Allow-Origin"=>"*", "Content-Length"=>"0", "Date"=>"Sun, 13 Mar 2022 11:47:28 GMT", "Vary"=>"Origin"}, see debug logs for body
+D, [2022-03-13T14:47:29.013846 #26809] DEBUG -- : body: 
+I, [2022-03-13T14:47:29.014313 #26809]  INFO -- : Running example 'Verifying a pact between ShoppingCartClient and ShoppingCartApi Given i will post a comment post request for a comment with POST /comments returns a response which has status code 200'
+I, [2022-03-13T14:47:29.015427 #26809]  INFO -- : Sending POST request to path: "/comments" with headers: {"CONTENT_TYPE"=>"application/json", "HTTP_X_PACT_ORIGINAL_HEADER_NAMES"=>"Content-Type", "X_PACT_PROVIDER_STATES"=>[{"name"=>"i will post a comment"}]}, see debug logs for body
+D, [2022-03-13T14:47:29.015478 #26809] DEBUG -- : body :{"email":"test@example.com","comment":"test"}
+I, [2022-03-13T14:47:29.017916 #26809]  INFO -- : Received response with status: 200, headers: {"Access-Control-Allow-Origin"=>"*", "Content-Length"=>"0", "Date"=>"Sun, 13 Mar 2022 11:47:28 GMT", "Vary"=>"Origin"}, see debug logs for body
+D, [2022-03-13T14:47:29.017954 #26809] DEBUG -- : body: 
+I, [2022-03-13T14:49:10.134028 #26997]  INFO -- : Running example 'Verifying a pact between ShoppingCartClient and ShoppingCartApi Given i have a list of comments a request for comments with GET /comments returns a response which has status code 200'
+I, [2022-03-13T14:49:10.138764 #26997]  INFO -- : Sending GET request to path: "/comments" with headers: {"HTTP_ACCEPT"=>"application/json", "HTTP_X_PACT_ORIGINAL_HEADER_NAMES"=>"Accept", "X_PACT_PROVIDER_STATES"=>[{"name"=>"i have a list of comments"}]}, see debug logs for body
+D, [2022-03-13T14:49:10.138812 #26997] DEBUG -- : body :
+I, [2022-03-13T14:49:10.151181 #26997]  INFO -- : Received response with status: 200, headers: {"Access-Control-Allow-Origin"=>"*", "Content-Length"=>"105", "Content-Type"=>"application/json", "Date"=>"Sun, 13 Mar 2022 11:49:09 GMT", "Vary"=>"Origin"}, see debug logs for body
+D, [2022-03-13T14:49:10.151233 #26997] DEBUG -- : body: [{"ID":1,"email":"test@gmail.com","content":"test"},{"ID":2,"email":"test2@gmail.com","content":"test2"}]
+I, [2022-03-13T14:49:10.152689 #26997]  INFO -- : Running example 'Verifying a pact between ShoppingCartClient and ShoppingCartApi Given i will delete comments a request for deleting comments with DELETE /comments returns a response which has status code 200'
+I, [2022-03-13T14:49:10.153951 #26997]  INFO -- : Sending DELETE request to path: "/comments" with headers: {"X_PACT_PROVIDER_STATES"=>[{"name"=>"i will delete comments"}]}, see debug logs for body
+D, [2022-03-13T14:49:10.153990 #26997] DEBUG -- : body :
+I, [2022-03-13T14:49:10.156745 #26997]  INFO -- : Received response with status: 200, headers: {"Access-Control-Allow-Origin"=>"*", "Content-Length"=>"0", "Date"=>"Sun, 13 Mar 2022 11:49:09 GMT", "Vary"=>"Origin"}, see debug logs for body
+D, [2022-03-13T14:49:10.156783 #26997] DEBUG -- : body: 
+I, [2022-03-13T14:49:10.158955 #26997]  INFO -- : Running example 'Verifying a pact between ShoppingCartClient and ShoppingCartApi Given i have a list of comments post request for a comment with POST /comments returns a response which has status code 200'
+I, [2022-03-13T14:49:10.160009 #26997]  INFO -- : Sending POST request to path: "/comments" with headers: {"CONTENT_TYPE"=>"application/json", "HTTP_X_PACT_ORIGINAL_HEADER_NAMES"=>"Content-Type", "X_PACT_PROVIDER_STATES"=>[{"name"=>"i have a list of comments"}]}, see debug logs for body
+D, [2022-03-13T14:49:10.160053 #26997] DEBUG -- : body :{"email":"test@example.com","comment":"test"}
+I, [2022-03-13T14:49:10.162360 #26997]  INFO -- : Received response with status: 200, headers: {"Access-Control-Allow-Origin"=>"*", "Content-Length"=>"0", "Date"=>"Sun, 13 Mar 2022 11:49:09 GMT", "Vary"=>"Origin"}, see debug logs for body
+D, [2022-03-13T14:49:10.162395 #26997] DEBUG -- : body: 
+I, [2022-03-13T14:49:10.162812 #26997]  INFO -- : Running example 'Verifying a pact between ShoppingCartClient and ShoppingCartApi Given i will post a comment post request for a comment with POST /comments returns a response which has status code 200'
+I, [2022-03-13T14:49:10.163810 #26997]  INFO -- : Sending POST request to path: "/comments" with headers: {"CONTENT_TYPE"=>"application/json", "HTTP_X_PACT_ORIGINAL_HEADER_NAMES"=>"Content-Type", "X_PACT_PROVIDER_STATES"=>[{"name"=>"i will post a comment"}]}, see debug logs for body
+D, [2022-03-13T14:49:10.163852 #26997] DEBUG -- : body :{"email":"test@example.com","content":"test"}
+I, [2022-03-13T14:49:10.166019 #26997]  INFO -- : Received response with status: 200, headers: {"Access-Control-Allow-Origin"=>"*", "Content-Length"=>"0", "Date"=>"Sun, 13 Mar 2022 11:49:09 GMT", "Vary"=>"Origin"}, see debug logs for body
+D, [2022-03-13T14:49:10.166056 #26997] DEBUG -- : body: 
+I, [2022-03-13T14:49:13.434904 #26997]  INFO -- : Running example 'Verifying a pact between ShoppingCartClient and ShoppingCartApi Given i have a list of comments a request for comments with GET /comments returns a response which has status code 200'
+I, [2022-03-13T14:49:13.437079 #26997]  INFO -- : Sending GET request to path: "/comments" with headers: {"HTTP_ACCEPT"=>"application/json", "HTTP_X_PACT_ORIGINAL_HEADER_NAMES"=>"Accept", "X_PACT_PROVIDER_STATES"=>[{"name"=>"i have a list of comments"}]}, see debug logs for body
+D, [2022-03-13T14:49:13.437174 #26997] DEBUG -- : body :
+I, [2022-03-13T14:49:13.439505 #26997]  INFO -- : Received response with status: 200, headers: {"Access-Control-Allow-Origin"=>"*", "Content-Length"=>"103", "Content-Type"=>"application/json", "Date"=>"Sun, 13 Mar 2022 11:49:12 GMT", "Vary"=>"Origin"}, see debug logs for body
+D, [2022-03-13T14:49:13.439551 #26997] DEBUG -- : body: [{"ID":3,"email":"test@example.com","content":""},{"ID":4,"email":"test@example.com","content":"test"}]
+I, [2022-03-13T14:49:13.440567 #26997]  INFO -- : Running example 'Verifying a pact between ShoppingCartClient and ShoppingCartApi Given i will delete comments a request for deleting comments with DELETE /comments returns a response which has status code 200'
+I, [2022-03-13T14:49:13.441798 #26997]  INFO -- : Sending DELETE request to path: "/comments" with headers: {"X_PACT_PROVIDER_STATES"=>[{"name"=>"i will delete comments"}]}, see debug logs for body
+D, [2022-03-13T14:49:13.441844 #26997] DEBUG -- : body :
+I, [2022-03-13T14:49:13.444763 #26997]  INFO -- : Received response with status: 200, headers: {"Access-Control-Allow-Origin"=>"*", "Content-Length"=>"0", "Date"=>"Sun, 13 Mar 2022 11:49:12 GMT", "Vary"=>"Origin"}, see debug logs for body
+D, [2022-03-13T14:49:13.444806 #26997] DEBUG -- : body: 
+I, [2022-03-13T14:49:13.445608 #26997]  INFO -- : Running example 'Verifying a pact between ShoppingCartClient and ShoppingCartApi Given i have a list of comments post request for a comment with POST /comments returns a response which has status code 200'
+I, [2022-03-13T14:49:13.446814 #26997]  INFO -- : Sending POST request to path: "/comments" with headers: {"CONTENT_TYPE"=>"application/json", "HTTP_X_PACT_ORIGINAL_HEADER_NAMES"=>"Content-Type", "X_PACT_PROVIDER_STATES"=>[{"name"=>"i have a list of comments"}]}, see debug logs for body
+D, [2022-03-13T14:49:13.446885 #26997] DEBUG -- : body :{"email":"test@example.com","comment":"test"}
+I, [2022-03-13T14:49:13.449540 #26997]  INFO -- : Received response with status: 200, headers: {"Access-Control-Allow-Origin"=>"*", "Content-Length"=>"0", "Date"=>"Sun, 13 Mar 2022 11:49:12 GMT", "Vary"=>"Origin"}, see debug logs for body
+D, [2022-03-13T14:49:13.449580 #26997] DEBUG -- : body: 
+I, [2022-03-13T14:49:13.450051 #26997]  INFO -- : Running example 'Verifying a pact between ShoppingCartClient and ShoppingCartApi Given i will post a comment post request for a comment with POST /comments returns a response which has status code 200'
+I, [2022-03-13T14:49:13.451193 #26997]  INFO -- : Sending POST request to path: "/comments" with headers: {"CONTENT_TYPE"=>"application/json", "HTTP_X_PACT_ORIGINAL_HEADER_NAMES"=>"Content-Type", "X_PACT_PROVIDER_STATES"=>[{"name"=>"i will post a comment"}]}, see debug logs for body
+D, [2022-03-13T14:49:13.451244 #26997] DEBUG -- : body :{"email":"test@example.com","content":"test"}
+I, [2022-03-13T14:49:13.453723 #26997]  INFO -- : Received response with status: 200, headers: {"Access-Control-Allow-Origin"=>"*", "Content-Length"=>"0", "Date"=>"Sun, 13 Mar 2022 11:49:12 GMT", "Vary"=>"Origin"}, see debug logs for body
+D, [2022-03-13T14:49:13.453760 #26997] DEBUG -- : body: 
+I, [2022-03-13T14:52:06.334817 #27239]  INFO -- : Running example 'Verifying a pact between ShoppingCartClient and ShoppingCartApi Given i have a list of comments a request for comments with GET /comments returns a response which has status code 200'
+I, [2022-03-13T14:52:06.339301 #27239]  INFO -- : Sending GET request to path: "/comments" with headers: {"HTTP_ACCEPT"=>"application/json", "HTTP_X_PACT_ORIGINAL_HEADER_NAMES"=>"Accept", "X_PACT_PROVIDER_STATES"=>[{"name"=>"i have a list of comments"}]}, see debug logs for body
+D, [2022-03-13T14:52:06.339352 #27239] DEBUG -- : body :
+I, [2022-03-13T14:52:06.351712 #27239]  INFO -- : Received response with status: 200, headers: {"Access-Control-Allow-Origin"=>"*", "Content-Length"=>"105", "Content-Type"=>"application/json", "Date"=>"Sun, 13 Mar 2022 11:52:06 GMT", "Vary"=>"Origin"}, see debug logs for body
+D, [2022-03-13T14:52:06.351765 #27239] DEBUG -- : body: [{"ID":1,"email":"test@gmail.com","content":"test"},{"ID":2,"email":"test2@gmail.com","content":"test2"}]
+I, [2022-03-13T14:52:06.353047 #27239]  INFO -- : Running example 'Verifying a pact between ShoppingCartClient and ShoppingCartApi Given i will delete comments a request for deleting comments with DELETE /comments returns a response which has status code 200'
+I, [2022-03-13T14:52:06.354338 #27239]  INFO -- : Sending DELETE request to path: "/comments" with headers: {"X_PACT_PROVIDER_STATES"=>[{"name"=>"i will delete comments"}]}, see debug logs for body
+D, [2022-03-13T14:52:06.354380 #27239] DEBUG -- : body :
+I, [2022-03-13T14:52:06.357033 #27239]  INFO -- : Received response with status: 200, headers: {"Access-Control-Allow-Origin"=>"*", "Content-Length"=>"0", "Date"=>"Sun, 13 Mar 2022 11:52:06 GMT", "Vary"=>"Origin"}, see debug logs for body
+D, [2022-03-13T14:52:06.357100 #27239] DEBUG -- : body: 
+I, [2022-03-13T14:52:06.357507 #27239]  INFO -- : Running example 'Verifying a pact between ShoppingCartClient and ShoppingCartApi Given i have a list of comments post request for a comment with POST /comments returns a response which has status code 200'
+I, [2022-03-13T14:52:06.358540 #27239]  INFO -- : Sending POST request to path: "/comments" with headers: {"CONTENT_TYPE"=>"application/json", "HTTP_X_PACT_ORIGINAL_HEADER_NAMES"=>"Content-Type", "X_PACT_PROVIDER_STATES"=>[{"name"=>"i have a list of comments"}]}, see debug logs for body
+D, [2022-03-13T14:52:06.358589 #27239] DEBUG -- : body :{"email":"test@example.com","comment":"test"}
+I, [2022-03-13T14:52:06.360992 #27239]  INFO -- : Received response with status: 200, headers: {"Access-Control-Allow-Origin"=>"*", "Content-Length"=>"0", "Date"=>"Sun, 13 Mar 2022 11:52:06 GMT", "Vary"=>"Origin"}, see debug logs for body
+D, [2022-03-13T14:52:06.361045 #27239] DEBUG -- : body: 
+I, [2022-03-13T14:52:06.361463 #27239]  INFO -- : Running example 'Verifying a pact between ShoppingCartClient and ShoppingCartApi Given i will post a comment post request for a comment with POST /comments returns a response which has status code 200'
+I, [2022-03-13T14:52:06.362433 #27239]  INFO -- : Sending POST request to path: "/comments" with headers: {"CONTENT_TYPE"=>"application/json", "HTTP_X_PACT_ORIGINAL_HEADER_NAMES"=>"Content-Type", "X_PACT_PROVIDER_STATES"=>[{"name"=>"i will post a comment"}]}, see debug logs for body
+D, [2022-03-13T14:52:06.362477 #27239] DEBUG -- : body :{"email":"test@example.com","content":"test"}
+I, [2022-03-13T14:52:06.364712 #27239]  INFO -- : Received response with status: 200, headers: {"Access-Control-Allow-Origin"=>"*", "Content-Length"=>"0", "Date"=>"Sun, 13 Mar 2022 11:52:06 GMT", "Vary"=>"Origin"}, see debug logs for body
+D, [2022-03-13T14:52:06.364745 #27239] DEBUG -- : body: 
+I, [2022-03-13T14:52:09.587029 #27239]  INFO -- : Running example 'Verifying a pact between ShoppingCartClient and ShoppingCartApi Given i have a list of comments a request for comments with GET /comments returns a response which has status code 200'
+I, [2022-03-13T14:52:09.588546 #27239]  INFO -- : Sending GET request to path: "/comments" with headers: {"HTTP_ACCEPT"=>"application/json", "HTTP_X_PACT_ORIGINAL_HEADER_NAMES"=>"Accept", "X_PACT_PROVIDER_STATES"=>[{"name"=>"i have a list of comments"}]}, see debug logs for body
+D, [2022-03-13T14:52:09.588589 #27239] DEBUG -- : body :
+I, [2022-03-13T14:52:09.590917 #27239]  INFO -- : Received response with status: 200, headers: {"Access-Control-Allow-Origin"=>"*", "Content-Length"=>"103", "Content-Type"=>"application/json", "Date"=>"Sun, 13 Mar 2022 11:52:09 GMT", "Vary"=>"Origin"}, see debug logs for body
+D, [2022-03-13T14:52:09.590960 #27239] DEBUG -- : body: [{"ID":3,"email":"test@example.com","content":""},{"ID":4,"email":"test@example.com","content":"test"}]
+I, [2022-03-13T14:52:09.591768 #27239]  INFO -- : Running example 'Verifying a pact between ShoppingCartClient and ShoppingCartApi Given i will delete comments a request for deleting comments with DELETE /comments returns a response which has status code 200'
+I, [2022-03-13T14:52:09.593008 #27239]  INFO -- : Sending DELETE request to path: "/comments" with headers: {"X_PACT_PROVIDER_STATES"=>[{"name"=>"i will delete comments"}]}, see debug logs for body
+D, [2022-03-13T14:52:09.593047 #27239] DEBUG -- : body :
+I, [2022-03-13T14:52:09.596577 #27239]  INFO -- : Received response with status: 200, headers: {"Access-Control-Allow-Origin"=>"*", "Content-Length"=>"0", "Date"=>"Sun, 13 Mar 2022 11:52:09 GMT", "Vary"=>"Origin"}, see debug logs for body
+D, [2022-03-13T14:52:09.596618 #27239] DEBUG -- : body: 
+I, [2022-03-13T14:52:09.597100 #27239]  INFO -- : Running example 'Verifying a pact between ShoppingCartClient and ShoppingCartApi Given i have a list of comments post request for a comment with POST /comments returns a response which has status code 200'
+I, [2022-03-13T14:52:09.598347 #27239]  INFO -- : Sending POST request to path: "/comments" with headers: {"CONTENT_TYPE"=>"application/json", "HTTP_X_PACT_ORIGINAL_HEADER_NAMES"=>"Content-Type", "X_PACT_PROVIDER_STATES"=>[{"name"=>"i have a list of comments"}]}, see debug logs for body
+D, [2022-03-13T14:52:09.598405 #27239] DEBUG -- : body :{"email":"test@example.com","comment":"test"}
+I, [2022-03-13T14:52:09.600866 #27239]  INFO -- : Received response with status: 200, headers: {"Access-Control-Allow-Origin"=>"*", "Content-Length"=>"0", "Date"=>"Sun, 13 Mar 2022 11:52:09 GMT", "Vary"=>"Origin"}, see debug logs for body
+D, [2022-03-13T14:52:09.600905 #27239] DEBUG -- : body: 
+I, [2022-03-13T14:52:09.601410 #27239]  INFO -- : Running example 'Verifying a pact between ShoppingCartClient and ShoppingCartApi Given i will post a comment post request for a comment with POST /comments returns a response which has status code 200'
+I, [2022-03-13T14:52:09.602589 #27239]  INFO -- : Sending POST request to path: "/comments" with headers: {"CONTENT_TYPE"=>"application/json", "HTTP_X_PACT_ORIGINAL_HEADER_NAMES"=>"Content-Type", "X_PACT_PROVIDER_STATES"=>[{"name"=>"i will post a comment"}]}, see debug logs for body
+D, [2022-03-13T14:52:09.602643 #27239] DEBUG -- : body :{"email":"test@example.com","content":"test"}
+I, [2022-03-13T14:52:09.605168 #27239]  INFO -- : Received response with status: 200, headers: {"Access-Control-Allow-Origin"=>"*", "Content-Length"=>"0", "Date"=>"Sun, 13 Mar 2022 11:52:09 GMT", "Vary"=>"Origin"}, see debug logs for body
+D, [2022-03-13T14:52:09.605206 #27239] DEBUG -- : body: 
+I, [2022-03-13T14:53:45.422870 #27342]  INFO -- : Running example 'Verifying a pact between ShoppingCartClient and ShoppingCartApi Given i have a list of comments a request for comments with GET /comments returns a response which has status code 200'
+I, [2022-03-13T14:53:45.427560 #27342]  INFO -- : Sending GET request to path: "/comments" with headers: {"HTTP_ACCEPT"=>"application/json", "HTTP_X_PACT_ORIGINAL_HEADER_NAMES"=>"Accept", "X_PACT_PROVIDER_STATES"=>[{"name"=>"i have a list of comments"}]}, see debug logs for body
+D, [2022-03-13T14:53:45.427609 #27342] DEBUG -- : body :
+I, [2022-03-13T14:53:45.439607 #27342]  INFO -- : Received response with status: 200, headers: {"Access-Control-Allow-Origin"=>"*", "Content-Length"=>"105", "Content-Type"=>"application/json", "Date"=>"Sun, 13 Mar 2022 11:53:44 GMT", "Vary"=>"Origin"}, see debug logs for body
+D, [2022-03-13T14:53:45.439658 #27342] DEBUG -- : body: [{"ID":1,"email":"test@gmail.com","content":"test"},{"ID":2,"email":"test2@gmail.com","content":"test2"}]
+I, [2022-03-13T14:53:45.440894 #27342]  INFO -- : Running example 'Verifying a pact between ShoppingCartClient and ShoppingCartApi Given i will delete comments a request for deleting comments with DELETE /comments returns a response which has status code 200'
+I, [2022-03-13T14:53:45.442156 #27342]  INFO -- : Sending DELETE request to path: "/comments" with headers: {"X_PACT_PROVIDER_STATES"=>[{"name"=>"i will delete comments"}]}, see debug logs for body
+D, [2022-03-13T14:53:45.442195 #27342] DEBUG -- : body :
+I, [2022-03-13T14:53:45.444931 #27342]  INFO -- : Received response with status: 200, headers: {"Access-Control-Allow-Origin"=>"*", "Content-Length"=>"0", "Date"=>"Sun, 13 Mar 2022 11:53:44 GMT", "Vary"=>"Origin"}, see debug logs for body
+D, [2022-03-13T14:53:45.444970 #27342] DEBUG -- : body: 
+I, [2022-03-13T14:53:45.445379 #27342]  INFO -- : Running example 'Verifying a pact between ShoppingCartClient and ShoppingCartApi Given i have a list of comments post request for a comment with POST /comments returns a response which has status code 200'
+I, [2022-03-13T14:53:45.446398 #27342]  INFO -- : Sending POST request to path: "/comments" with headers: {"CONTENT_TYPE"=>"application/json", "HTTP_X_PACT_ORIGINAL_HEADER_NAMES"=>"Content-Type", "X_PACT_PROVIDER_STATES"=>[{"name"=>"i have a list of comments"}]}, see debug logs for body
+D, [2022-03-13T14:53:45.446447 #27342] DEBUG -- : body :{"email":"test@example.com","comment":"test"}
+I, [2022-03-13T14:53:45.448814 #27342]  INFO -- : Received response with status: 200, headers: {"Access-Control-Allow-Origin"=>"*", "Content-Length"=>"0", "Date"=>"Sun, 13 Mar 2022 11:53:44 GMT", "Vary"=>"Origin"}, see debug logs for body
+D, [2022-03-13T14:53:45.448854 #27342] DEBUG -- : body: 
+I, [2022-03-13T14:53:45.449299 #27342]  INFO -- : Running example 'Verifying a pact between ShoppingCartClient and ShoppingCartApi Given i will post a comment post request for a comment with POST /comments returns a response which has status code 200'
+I, [2022-03-13T14:53:45.450317 #27342]  INFO -- : Sending POST request to path: "/comments" with headers: {"CONTENT_TYPE"=>"application/json", "HTTP_X_PACT_ORIGINAL_HEADER_NAMES"=>"Content-Type", "X_PACT_PROVIDER_STATES"=>[{"name"=>"i will post a comment"}]}, see debug logs for body
+D, [2022-03-13T14:53:45.450365 #27342] DEBUG -- : body :{"email":"test@example.com","content":"test"}
+I, [2022-03-13T14:53:45.452757 #27342]  INFO -- : Received response with status: 200, headers: {"Access-Control-Allow-Origin"=>"*", "Content-Length"=>"0", "Date"=>"Sun, 13 Mar 2022 11:53:44 GMT", "Vary"=>"Origin"}, see debug logs for body
+D, [2022-03-13T14:53:45.452794 #27342] DEBUG -- : body: 
+I, [2022-03-13T14:53:48.822121 #27342]  INFO -- : Running example 'Verifying a pact between ShoppingCartClient and ShoppingCartApi Given i have a list of comments a request for comments with GET /comments returns a response which has status code 200'
+I, [2022-03-13T14:53:48.823722 #27342]  INFO -- : Sending GET request to path: "/comments" with headers: {"HTTP_ACCEPT"=>"application/json", "HTTP_X_PACT_ORIGINAL_HEADER_NAMES"=>"Accept", "X_PACT_PROVIDER_STATES"=>[{"name"=>"i have a list of comments"}]}, see debug logs for body
+D, [2022-03-13T14:53:48.823768 #27342] DEBUG -- : body :
+I, [2022-03-13T14:53:48.825908 #27342]  INFO -- : Received response with status: 200, headers: {"Access-Control-Allow-Origin"=>"*", "Content-Length"=>"103", "Content-Type"=>"application/json", "Date"=>"Sun, 13 Mar 2022 11:53:47 GMT", "Vary"=>"Origin"}, see debug logs for body
+D, [2022-03-13T14:53:48.825950 #27342] DEBUG -- : body: [{"ID":3,"email":"test@example.com","content":""},{"ID":4,"email":"test@example.com","content":"test"}]
+I, [2022-03-13T14:53:48.826726 #27342]  INFO -- : Running example 'Verifying a pact between ShoppingCartClient and ShoppingCartApi Given i will delete comments a request for deleting comments with DELETE /comments returns a response which has status code 200'
+I, [2022-03-13T14:53:48.827854 #27342]  INFO -- : Sending DELETE request to path: "/comments" with headers: {"X_PACT_PROVIDER_STATES"=>[{"name"=>"i will delete comments"}]}, see debug logs for body
+D, [2022-03-13T14:53:48.827889 #27342] DEBUG -- : body :
+I, [2022-03-13T14:53:48.830867 #27342]  INFO -- : Received response with status: 200, headers: {"Access-Control-Allow-Origin"=>"*", "Content-Length"=>"0", "Date"=>"Sun, 13 Mar 2022 11:53:47 GMT", "Vary"=>"Origin"}, see debug logs for body
+D, [2022-03-13T14:53:48.830919 #27342] DEBUG -- : body: 
+I, [2022-03-13T14:53:48.831436 #27342]  INFO -- : Running example 'Verifying a pact between ShoppingCartClient and ShoppingCartApi Given i have a list of comments post request for a comment with POST /comments returns a response which has status code 200'
+I, [2022-03-13T14:53:48.832841 #27342]  INFO -- : Sending POST request to path: "/comments" with headers: {"CONTENT_TYPE"=>"application/json", "HTTP_X_PACT_ORIGINAL_HEADER_NAMES"=>"Content-Type", "X_PACT_PROVIDER_STATES"=>[{"name"=>"i have a list of comments"}]}, see debug logs for body
+D, [2022-03-13T14:53:48.832893 #27342] DEBUG -- : body :{"email":"test@example.com","comment":"test"}
+I, [2022-03-13T14:53:48.835526 #27342]  INFO -- : Received response with status: 200, headers: {"Access-Control-Allow-Origin"=>"*", "Content-Length"=>"0", "Date"=>"Sun, 13 Mar 2022 11:53:47 GMT", "Vary"=>"Origin"}, see debug logs for body
+D, [2022-03-13T14:53:48.835567 #27342] DEBUG -- : body: 
+I, [2022-03-13T14:53:48.836066 #27342]  INFO -- : Running example 'Verifying a pact between ShoppingCartClient and ShoppingCartApi Given i will post a comment post request for a comment with POST /comments returns a response which has status code 200'
+I, [2022-03-13T14:53:48.837313 #27342]  INFO -- : Sending POST request to path: "/comments" with headers: {"CONTENT_TYPE"=>"application/json", "HTTP_X_PACT_ORIGINAL_HEADER_NAMES"=>"Content-Type", "X_PACT_PROVIDER_STATES"=>[{"name"=>"i will post a comment"}]}, see debug logs for body
+D, [2022-03-13T14:53:48.837368 #27342] DEBUG -- : body :{"email":"test@example.com","content":"test"}
+I, [2022-03-13T14:53:48.839704 #27342]  INFO -- : Received response with status: 200, headers: {"Access-Control-Allow-Origin"=>"*", "Content-Length"=>"0", "Date"=>"Sun, 13 Mar 2022 11:53:47 GMT", "Vary"=>"Origin"}, see debug logs for body
+D, [2022-03-13T14:53:48.839742 #27342] DEBUG -- : body: 
+I, [2022-03-13T14:54:06.630466 #27522]  INFO -- : Running example 'Verifying a pact between ShoppingCartClient and ShoppingCartApi Given i have a list of comments a request for comments with GET /comments returns a response which has status code 200'
+I, [2022-03-13T14:54:06.635086 #27522]  INFO -- : Sending GET request to path: "/comments" with headers: {"HTTP_ACCEPT"=>"application/json", "HTTP_X_PACT_ORIGINAL_HEADER_NAMES"=>"Accept", "X_PACT_PROVIDER_STATES"=>[{"name"=>"i have a list of comments"}]}, see debug logs for body
+D, [2022-03-13T14:54:06.635129 #27522] DEBUG -- : body :
+I, [2022-03-13T14:54:06.647299 #27522]  INFO -- : Received response with status: 200, headers: {"Access-Control-Allow-Origin"=>"*", "Content-Length"=>"105", "Content-Type"=>"application/json", "Date"=>"Sun, 13 Mar 2022 11:54:05 GMT", "Vary"=>"Origin"}, see debug logs for body
+D, [2022-03-13T14:54:06.647348 #27522] DEBUG -- : body: [{"ID":1,"email":"test@gmail.com","content":"test"},{"ID":2,"email":"test2@gmail.com","content":"test2"}]
+I, [2022-03-13T14:54:06.648597 #27522]  INFO -- : Running example 'Verifying a pact between ShoppingCartClient and ShoppingCartApi Given i will delete comments a request for deleting comments with DELETE /comments returns a response which has status code 200'
+I, [2022-03-13T14:54:06.650004 #27522]  INFO -- : Sending DELETE request to path: "/comments" with headers: {"X_PACT_PROVIDER_STATES"=>[{"name"=>"i will delete comments"}]}, see debug logs for body
+D, [2022-03-13T14:54:06.650041 #27522] DEBUG -- : body :
+I, [2022-03-13T14:54:06.652773 #27522]  INFO -- : Received response with status: 200, headers: {"Access-Control-Allow-Origin"=>"*", "Content-Length"=>"0", "Date"=>"Sun, 13 Mar 2022 11:54:05 GMT", "Vary"=>"Origin"}, see debug logs for body
+D, [2022-03-13T14:54:06.652809 #27522] DEBUG -- : body: 
+I, [2022-03-13T14:54:06.653219 #27522]  INFO -- : Running example 'Verifying a pact between ShoppingCartClient and ShoppingCartApi Given i have a list of comments post request for a comment with POST /comments returns a response which has status code 200'
+I, [2022-03-13T14:54:06.654320 #27522]  INFO -- : Sending POST request to path: "/comments" with headers: {"CONTENT_TYPE"=>"application/json", "HTTP_X_PACT_ORIGINAL_HEADER_NAMES"=>"Content-Type", "X_PACT_PROVIDER_STATES"=>[{"name"=>"i have a list of comments"}]}, see debug logs for body
+D, [2022-03-13T14:54:06.654366 #27522] DEBUG -- : body :{"email":"test@example.com","comment":"test"}
+I, [2022-03-13T14:54:06.656699 #27522]  INFO -- : Received response with status: 200, headers: {"Access-Control-Allow-Origin"=>"*", "Content-Length"=>"0", "Date"=>"Sun, 13 Mar 2022 11:54:05 GMT", "Vary"=>"Origin"}, see debug logs for body
+D, [2022-03-13T14:54:06.656732 #27522] DEBUG -- : body: 
+I, [2022-03-13T14:54:06.657153 #27522]  INFO -- : Running example 'Verifying a pact between ShoppingCartClient and ShoppingCartApi Given i will post a comment post request for a comment with POST /comments returns a response which has status code 200'
+I, [2022-03-13T14:54:06.658162 #27522]  INFO -- : Sending POST request to path: "/comments" with headers: {"CONTENT_TYPE"=>"application/json", "HTTP_X_PACT_ORIGINAL_HEADER_NAMES"=>"Content-Type", "X_PACT_PROVIDER_STATES"=>[{"name"=>"i will post a comment"}]}, see debug logs for body
+D, [2022-03-13T14:54:06.658202 #27522] DEBUG -- : body :{"email":"test@example.com","content":"test"}
+I, [2022-03-13T14:54:06.660245 #27522]  INFO -- : Received response with status: 200, headers: {"Access-Control-Allow-Origin"=>"*", "Content-Length"=>"0", "Date"=>"Sun, 13 Mar 2022 11:54:05 GMT", "Vary"=>"Origin"}, see debug logs for body
+D, [2022-03-13T14:54:06.660280 #27522] DEBUG -- : body: 
+I, [2022-03-13T14:54:10.284324 #27522]  INFO -- : Running example 'Verifying a pact between ShoppingCartClient and ShoppingCartApi Given i have a list of comments a request for comments with GET /comments returns a response which has status code 200'
+I, [2022-03-13T14:54:10.285899 #27522]  INFO -- : Sending GET request to path: "/comments" with headers: {"HTTP_ACCEPT"=>"application/json", "HTTP_X_PACT_ORIGINAL_HEADER_NAMES"=>"Accept", "X_PACT_PROVIDER_STATES"=>[{"name"=>"i have a list of comments"}]}, see debug logs for body
+D, [2022-03-13T14:54:10.285957 #27522] DEBUG -- : body :
+I, [2022-03-13T14:54:10.288345 #27522]  INFO -- : Received response with status: 200, headers: {"Access-Control-Allow-Origin"=>"*", "Content-Length"=>"103", "Content-Type"=>"application/json", "Date"=>"Sun, 13 Mar 2022 11:54:09 GMT", "Vary"=>"Origin"}, see debug logs for body
+D, [2022-03-13T14:54:10.288390 #27522] DEBUG -- : body: [{"ID":3,"email":"test@example.com","content":""},{"ID":4,"email":"test@example.com","content":"test"}]
+I, [2022-03-13T14:54:10.289185 #27522]  INFO -- : Running example 'Verifying a pact between ShoppingCartClient and ShoppingCartApi Given i will delete comments a request for deleting comments with DELETE /comments returns a response which has status code 200'
+I, [2022-03-13T14:54:10.290453 #27522]  INFO -- : Sending DELETE request to path: "/comments" with headers: {"X_PACT_PROVIDER_STATES"=>[{"name"=>"i will delete comments"}]}, see debug logs for body
+D, [2022-03-13T14:54:10.290493 #27522] DEBUG -- : body :
+I, [2022-03-13T14:54:10.293078 #27522]  INFO -- : Received response with status: 200, headers: {"Access-Control-Allow-Origin"=>"*", "Content-Length"=>"0", "Date"=>"Sun, 13 Mar 2022 11:54:09 GMT", "Vary"=>"Origin"}, see debug logs for body
+D, [2022-03-13T14:54:10.293117 #27522] DEBUG -- : body: 
+I, [2022-03-13T14:54:10.293582 #27522]  INFO -- : Running example 'Verifying a pact between ShoppingCartClient and ShoppingCartApi Given i have a list of comments post request for a comment with POST /comments returns a response which has status code 200'
+I, [2022-03-13T14:54:10.294805 #27522]  INFO -- : Sending POST request to path: "/comments" with headers: {"CONTENT_TYPE"=>"application/json", "HTTP_X_PACT_ORIGINAL_HEADER_NAMES"=>"Content-Type", "X_PACT_PROVIDER_STATES"=>[{"name"=>"i have a list of comments"}]}, see debug logs for body
+D, [2022-03-13T14:54:10.294858 #27522] DEBUG -- : body :{"email":"test@example.com","comment":"test"}
+I, [2022-03-13T14:54:10.297371 #27522]  INFO -- : Received response with status: 200, headers: {"Access-Control-Allow-Origin"=>"*", "Content-Length"=>"0", "Date"=>"Sun, 13 Mar 2022 11:54:09 GMT", "Vary"=>"Origin"}, see debug logs for body
+D, [2022-03-13T14:54:10.297409 #27522] DEBUG -- : body: 
+I, [2022-03-13T14:54:10.297857 #27522]  INFO -- : Running example 'Verifying a pact between ShoppingCartClient and ShoppingCartApi Given i will post a comment post request for a comment with POST /comments returns a response which has status code 200'
+I, [2022-03-13T14:54:10.299008 #27522]  INFO -- : Sending POST request to path: "/comments" with headers: {"CONTENT_TYPE"=>"application/json", "HTTP_X_PACT_ORIGINAL_HEADER_NAMES"=>"Content-Type", "X_PACT_PROVIDER_STATES"=>[{"name"=>"i will post a comment"}]}, see debug logs for body
+D, [2022-03-13T14:54:10.299061 #27522] DEBUG -- : body :{"email":"test@example.com","content":"test"}
+I, [2022-03-13T14:54:10.301497 #27522]  INFO -- : Received response with status: 200, headers: {"Access-Control-Allow-Origin"=>"*", "Content-Length"=>"0", "Date"=>"Sun, 13 Mar 2022 11:54:09 GMT", "Vary"=>"Origin"}, see debug logs for body
+D, [2022-03-13T14:54:10.301535 #27522] DEBUG -- : body: 
+I, [2022-03-13T14:54:30.759766 #27650]  INFO -- : Running example 'Verifying a pact between ShoppingCartClient and ShoppingCartApi Given i have a list of comments a request for comments with GET /comments returns a response which has status code 200'
+I, [2022-03-13T14:54:30.765143 #27650]  INFO -- : Sending GET request to path: "/comments" with headers: {"HTTP_ACCEPT"=>"application/json", "HTTP_X_PACT_ORIGINAL_HEADER_NAMES"=>"Accept", "X_PACT_PROVIDER_STATES"=>[{"name"=>"i have a list of comments"}]}, see debug logs for body
+D, [2022-03-13T14:54:30.765211 #27650] DEBUG -- : body :
+I, [2022-03-13T14:54:30.779529 #27650]  INFO -- : Received response with status: 200, headers: {"Access-Control-Allow-Origin"=>"*", "Content-Length"=>"207", "Content-Type"=>"application/json", "Date"=>"Sun, 13 Mar 2022 11:54:30 GMT", "Vary"=>"Origin"}, see debug logs for body
+D, [2022-03-13T14:54:30.779628 #27650] DEBUG -- : body: [{"ID":5,"email":"test@example.com","content":""},{"ID":6,"email":"test@example.com","content":"test"},{"ID":7,"email":"test@gmail.com","content":"test"},{"ID":8,"email":"test2@gmail.com","content":"test2"}]
+I, [2022-03-13T14:54:30.781429 #27650]  INFO -- : Running example 'Verifying a pact between ShoppingCartClient and ShoppingCartApi Given i will delete comments a request for deleting comments with DELETE /comments returns a response which has status code 200'
+I, [2022-03-13T14:54:30.783096 #27650]  INFO -- : Sending DELETE request to path: "/comments" with headers: {"X_PACT_PROVIDER_STATES"=>[{"name"=>"i will delete comments"}]}, see debug logs for body
+D, [2022-03-13T14:54:30.783149 #27650] DEBUG -- : body :
+I, [2022-03-13T14:54:30.786077 #27650]  INFO -- : Received response with status: 200, headers: {"Access-Control-Allow-Origin"=>"*", "Content-Length"=>"0", "Date"=>"Sun, 13 Mar 2022 11:54:30 GMT", "Vary"=>"Origin"}, see debug logs for body
+D, [2022-03-13T14:54:30.786120 #27650] DEBUG -- : body: 
+I, [2022-03-13T14:54:30.786727 #27650]  INFO -- : Running example 'Verifying a pact between ShoppingCartClient and ShoppingCartApi Given i have a list of comments post request for a comment with POST /comments returns a response which has status code 200'
+I, [2022-03-13T14:54:30.788289 #27650]  INFO -- : Sending POST request to path: "/comments" with headers: {"CONTENT_TYPE"=>"application/json", "HTTP_X_PACT_ORIGINAL_HEADER_NAMES"=>"Content-Type", "X_PACT_PROVIDER_STATES"=>[{"name"=>"i have a list of comments"}]}, see debug logs for body
+D, [2022-03-13T14:54:30.788355 #27650] DEBUG -- : body :{"email":"test@example.com","comment":"test"}
+I, [2022-03-13T14:54:30.791483 #27650]  INFO -- : Received response with status: 200, headers: {"Access-Control-Allow-Origin"=>"*", "Content-Length"=>"0", "Date"=>"Sun, 13 Mar 2022 11:54:30 GMT", "Vary"=>"Origin"}, see debug logs for body
+D, [2022-03-13T14:54:30.791528 #27650] DEBUG -- : body: 
+I, [2022-03-13T14:54:30.792287 #27650]  INFO -- : Running example 'Verifying a pact between ShoppingCartClient and ShoppingCartApi Given i will post a comment post request for a comment with POST /comments returns a response which has status code 200'
+I, [2022-03-13T14:54:30.793693 #27650]  INFO -- : Sending POST request to path: "/comments" with headers: {"CONTENT_TYPE"=>"application/json", "HTTP_X_PACT_ORIGINAL_HEADER_NAMES"=>"Content-Type", "X_PACT_PROVIDER_STATES"=>[{"name"=>"i will post a comment"}]}, see debug logs for body
+D, [2022-03-13T14:54:30.793742 #27650] DEBUG -- : body :{"email":"test@example.com","content":"test"}
+I, [2022-03-13T14:54:30.796775 #27650]  INFO -- : Received response with status: 200, headers: {"Access-Control-Allow-Origin"=>"*", "Content-Length"=>"0", "Date"=>"Sun, 13 Mar 2022 11:54:30 GMT", "Vary"=>"Origin"}, see debug logs for body
+D, [2022-03-13T14:54:30.796828 #27650] DEBUG -- : body: 
+I, [2022-03-13T14:54:34.002806 #27650]  INFO -- : Running example 'Verifying a pact between ShoppingCartClient and ShoppingCartApi Given i have a list of comments a request for comments with GET /comments returns a response which has status code 200'
+I, [2022-03-13T14:54:34.004356 #27650]  INFO -- : Sending GET request to path: "/comments" with headers: {"HTTP_ACCEPT"=>"application/json", "HTTP_X_PACT_ORIGINAL_HEADER_NAMES"=>"Accept", "X_PACT_PROVIDER_STATES"=>[{"name"=>"i have a list of comments"}]}, see debug logs for body
+D, [2022-03-13T14:54:34.004402 #27650] DEBUG -- : body :
+I, [2022-03-13T14:54:34.006903 #27650]  INFO -- : Received response with status: 200, headers: {"Access-Control-Allow-Origin"=>"*", "Content-Length"=>"104", "Content-Type"=>"application/json", "Date"=>"Sun, 13 Mar 2022 11:54:33 GMT", "Vary"=>"Origin"}, see debug logs for body
+D, [2022-03-13T14:54:34.006948 #27650] DEBUG -- : body: [{"ID":9,"email":"test@example.com","content":""},{"ID":10,"email":"test@example.com","content":"test"}]
+I, [2022-03-13T14:54:34.007742 #27650]  INFO -- : Running example 'Verifying a pact between ShoppingCartClient and ShoppingCartApi Given i will delete comments a request for deleting comments with DELETE /comments returns a response which has status code 200'
+I, [2022-03-13T14:54:34.009019 #27650]  INFO -- : Sending DELETE request to path: "/comments" with headers: {"X_PACT_PROVIDER_STATES"=>[{"name"=>"i will delete comments"}]}, see debug logs for body
+D, [2022-03-13T14:54:34.009058 #27650] DEBUG -- : body :
+I, [2022-03-13T14:54:34.011958 #27650]  INFO -- : Received response with status: 200, headers: {"Access-Control-Allow-Origin"=>"*", "Content-Length"=>"0", "Date"=>"Sun, 13 Mar 2022 11:54:33 GMT", "Vary"=>"Origin"}, see debug logs for body
+D, [2022-03-13T14:54:34.011996 #27650] DEBUG -- : body: 
+I, [2022-03-13T14:54:34.012459 #27650]  INFO -- : Running example 'Verifying a pact between ShoppingCartClient and ShoppingCartApi Given i have a list of comments post request for a comment with POST /comments returns a response which has status code 200'
+I, [2022-03-13T14:54:34.013707 #27650]  INFO -- : Sending POST request to path: "/comments" with headers: {"CONTENT_TYPE"=>"application/json", "HTTP_X_PACT_ORIGINAL_HEADER_NAMES"=>"Content-Type", "X_PACT_PROVIDER_STATES"=>[{"name"=>"i have a list of comments"}]}, see debug logs for body
+D, [2022-03-13T14:54:34.013783 #27650] DEBUG -- : body :{"email":"test@example.com","comment":"test"}
+I, [2022-03-13T14:54:34.016327 #27650]  INFO -- : Received response with status: 200, headers: {"Access-Control-Allow-Origin"=>"*", "Content-Length"=>"0", "Date"=>"Sun, 13 Mar 2022 11:54:33 GMT", "Vary"=>"Origin"}, see debug logs for body
+D, [2022-03-13T14:54:34.016364 #27650] DEBUG -- : body: 
+I, [2022-03-13T14:54:34.016828 #27650]  INFO -- : Running example 'Verifying a pact between ShoppingCartClient and ShoppingCartApi Given i will post a comment post request for a comment with POST /comments returns a response which has status code 200'
+I, [2022-03-13T14:54:34.017955 #27650]  INFO -- : Sending POST request to path: "/comments" with headers: {"CONTENT_TYPE"=>"application/json", "HTTP_X_PACT_ORIGINAL_HEADER_NAMES"=>"Content-Type", "X_PACT_PROVIDER_STATES"=>[{"name"=>"i will post a comment"}]}, see debug logs for body
+D, [2022-03-13T14:54:34.018006 #27650] DEBUG -- : body :{"email":"test@example.com","content":"test"}
+I, [2022-03-13T14:54:34.020497 #27650]  INFO -- : Received response with status: 200, headers: {"Access-Control-Allow-Origin"=>"*", "Content-Length"=>"0", "Date"=>"Sun, 13 Mar 2022 11:54:33 GMT", "Vary"=>"Origin"}, see debug logs for body
+D, [2022-03-13T14:54:34.020538 #27650] DEBUG -- : body: 
