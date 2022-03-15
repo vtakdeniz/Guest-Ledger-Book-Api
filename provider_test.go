@@ -32,8 +32,8 @@ type Settings struct {
 
 func (s *Settings) InitSettings() {
 	s.Host = "127.0.0.1"
-	s.ConsumerName = "ShoppingCartClient"
-	s.ProviderName = "ShoppingCartApi"
+	s.ConsumerName = "guestLedgerBookClient"
+	s.ProviderName = "guestLedgerBookApi"
 	s.PactURL = "https://mediterranean.pactflow.io/pacts/provider/ShoppingCartApi/consumer/ShoppingCartClient/version/1"
 	s.PublishVerificationResults = true
 	s.FailIfNoPactsFound = true
