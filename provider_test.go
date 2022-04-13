@@ -34,7 +34,7 @@ func (s *Settings) InitSettings() {
 	s.Host = "127.0.0.1"
 	s.ConsumerName = "guestLedgerBookClient"
 	s.ProviderName = "guestLedgerBookApi"
-	s.PactURL = "https://mediterranean.pactflow.io/pacts/provider/ShoppingCartApi/consumer/ShoppingCartClient/version/1"
+	s.PactURL = "https://mediterranean.pactflow.io/pacts/provider/guestLedgerBookApi/consumer/guestLedgerBookClient/version/1"
 	s.PublishVerificationResults = true
 	s.FailIfNoPactsFound = true
 	s.DisableToolValidityCheck = true

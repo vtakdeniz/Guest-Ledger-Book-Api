@@ -344,3 +344,33 @@ I, [2022-03-13T14:54:34.017955 #27650]  INFO -- : Sending POST request to path: 
 D, [2022-03-13T14:54:34.018006 #27650] DEBUG -- : body :{"email":"test@example.com","content":"test"}
 I, [2022-03-13T14:54:34.020497 #27650]  INFO -- : Received response with status: 200, headers: {"Access-Control-Allow-Origin"=>"*", "Content-Length"=>"0", "Date"=>"Sun, 13 Mar 2022 11:54:33 GMT", "Vary"=>"Origin"}, see debug logs for body
 D, [2022-03-13T14:54:34.020538 #27650] DEBUG -- : body: 
+I, [2022-04-13T23:38:56.653744 #90710]  INFO -- : Running example 'Verifying a pact between guestLedgerBookClient and guestLedgerBookApi Given i have a list of comments a request for comments with GET /comments returns a response which has status code 200'
+I, [2022-04-13T23:38:56.662988 #90710]  INFO -- : Sending GET request to path: "/comments" with headers: {"HTTP_ACCEPT"=>"application/json", "HTTP_X_PACT_ORIGINAL_HEADER_NAMES"=>"Accept", "X_PACT_PROVIDER_STATES"=>[{"name"=>"i have a list of comments"}]}, see debug logs for body
+D, [2022-04-13T23:38:56.663047 #90710] DEBUG -- : body :
+I, [2022-04-13T23:38:56.680103 #90710]  INFO -- : Received response with status: 200, headers: {"Access-Control-Allow-Origin"=>"*", "Content-Length"=>"105", "Content-Type"=>"application/json", "Date"=>"Wed, 13 Apr 2022 20:38:55 GMT", "Vary"=>"Origin"}, see debug logs for body
+D, [2022-04-13T23:38:56.680169 #90710] DEBUG -- : body: [{"ID":1,"email":"test@gmail.com","content":"test"},{"ID":2,"email":"test2@gmail.com","content":"test2"}]
+I, [2022-04-13T23:38:56.681944 #90710]  INFO -- : Running example 'Verifying a pact between guestLedgerBookClient and guestLedgerBookApi Given i will delete comments a request for deleting comments with DELETE /comments returns a response which has status code 200'
+I, [2022-04-13T23:38:56.683238 #90710]  INFO -- : Sending DELETE request to path: "/comments" with headers: {"X_PACT_PROVIDER_STATES"=>[{"name"=>"i will delete comments"}]}, see debug logs for body
+D, [2022-04-13T23:38:56.683293 #90710] DEBUG -- : body :
+I, [2022-04-13T23:38:56.685785 #90710]  INFO -- : Received response with status: 200, headers: {"Access-Control-Allow-Origin"=>"*", "Content-Length"=>"0", "Date"=>"Wed, 13 Apr 2022 20:38:55 GMT", "Vary"=>"Origin"}, see debug logs for body
+D, [2022-04-13T23:38:56.685819 #90710] DEBUG -- : body: 
+I, [2022-04-13T23:38:56.686266 #90710]  INFO -- : Running example 'Verifying a pact between guestLedgerBookClient and guestLedgerBookApi Given i will post a comment post request for a comment with POST /comments returns a response which has status code 200'
+I, [2022-04-13T23:38:56.687386 #90710]  INFO -- : Sending POST request to path: "/comments" with headers: {"CONTENT_TYPE"=>"application/json", "HTTP_X_PACT_ORIGINAL_HEADER_NAMES"=>"Content-Type", "X_PACT_PROVIDER_STATES"=>[{"name"=>"i will post a comment"}]}, see debug logs for body
+D, [2022-04-13T23:38:56.687432 #90710] DEBUG -- : body :{"email":"test@example.com","content":"test"}
+I, [2022-04-13T23:38:56.690019 #90710]  INFO -- : Received response with status: 200, headers: {"Access-Control-Allow-Origin"=>"*", "Content-Length"=>"0", "Date"=>"Wed, 13 Apr 2022 20:38:55 GMT", "Vary"=>"Origin"}, see debug logs for body
+D, [2022-04-13T23:38:56.690055 #90710] DEBUG -- : body: 
+I, [2022-04-13T23:39:00.029950 #90710]  INFO -- : Running example 'Verifying a pact between guestLedgerBookClient and guestLedgerBookApi Given i have a list of comments a request for comments with GET /comments returns a response which has status code 200'
+I, [2022-04-13T23:39:00.031551 #90710]  INFO -- : Sending GET request to path: "/comments" with headers: {"HTTP_ACCEPT"=>"application/json", "HTTP_X_PACT_ORIGINAL_HEADER_NAMES"=>"Accept", "X_PACT_PROVIDER_STATES"=>[{"name"=>"i have a list of comments"}]}, see debug logs for body
+D, [2022-04-13T23:39:00.031594 #90710] DEBUG -- : body :
+I, [2022-04-13T23:39:00.033927 #90710]  INFO -- : Received response with status: 200, headers: {"Access-Control-Allow-Origin"=>"*", "Content-Length"=>"54", "Content-Type"=>"application/json", "Date"=>"Wed, 13 Apr 2022 20:39:00 GMT", "Vary"=>"Origin"}, see debug logs for body
+D, [2022-04-13T23:39:00.033971 #90710] DEBUG -- : body: [{"ID":3,"email":"test@example.com","content":"test"}]
+I, [2022-04-13T23:39:00.034745 #90710]  INFO -- : Running example 'Verifying a pact between guestLedgerBookClient and guestLedgerBookApi Given i will delete comments a request for deleting comments with DELETE /comments returns a response which has status code 200'
+I, [2022-04-13T23:39:00.036010 #90710]  INFO -- : Sending DELETE request to path: "/comments" with headers: {"X_PACT_PROVIDER_STATES"=>[{"name"=>"i will delete comments"}]}, see debug logs for body
+D, [2022-04-13T23:39:00.036052 #90710] DEBUG -- : body :
+I, [2022-04-13T23:39:00.038960 #90710]  INFO -- : Received response with status: 200, headers: {"Access-Control-Allow-Origin"=>"*", "Content-Length"=>"0", "Date"=>"Wed, 13 Apr 2022 20:39:00 GMT", "Vary"=>"Origin"}, see debug logs for body
+D, [2022-04-13T23:39:00.039003 #90710] DEBUG -- : body: 
+I, [2022-04-13T23:39:00.039463 #90710]  INFO -- : Running example 'Verifying a pact between guestLedgerBookClient and guestLedgerBookApi Given i will post a comment post request for a comment with POST /comments returns a response which has status code 200'
+I, [2022-04-13T23:39:00.040650 #90710]  INFO -- : Sending POST request to path: "/comments" with headers: {"CONTENT_TYPE"=>"application/json", "HTTP_X_PACT_ORIGINAL_HEADER_NAMES"=>"Content-Type", "X_PACT_PROVIDER_STATES"=>[{"name"=>"i will post a comment"}]}, see debug logs for body
+D, [2022-04-13T23:39:00.040703 #90710] DEBUG -- : body :{"email":"test@example.com","content":"test"}
+I, [2022-04-13T23:39:00.043312 #90710]  INFO -- : Received response with status: 200, headers: {"Access-Control-Allow-Origin"=>"*", "Content-Length"=>"0", "Date"=>"Wed, 13 Apr 2022 20:39:00 GMT", "Vary"=>"Origin"}, see debug logs for body
+D, [2022-04-13T23:39:00.043349 #90710] DEBUG -- : body: 
